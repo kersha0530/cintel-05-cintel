@@ -1,2 +1,4 @@
 shiny
 faicons
+shiny-express
+matplotlib
