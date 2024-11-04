@@ -1,5 +1,6 @@
 # cintel-05-cintel
-# Kersha: Live Data (Basic)
+# Kersha: Antarctic Temperature Tracker
+Kersha: Antarctic Temperature Tracker
 
 ## Overview
 This Shiny app demonstrates real-time temperature readings in Antarctica. It uses PyShiny to create an interactive web application that displays the current temperature and timestamp. The app updates the data periodically to provide live insights.
