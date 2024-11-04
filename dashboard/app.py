@@ -10,7 +10,7 @@ UPDATE_INTERVAL_SECS: int = 1
 
 # Define the UI
 
-ui.page_opts(title="Kersha: Live Data (Basic)", fillable=True),
+ui.page_opts(title="Kersha: Antarctic Temperature Tracker", fillable=True),
 
 # Add CSS for background color
 ui.tags.style("""
