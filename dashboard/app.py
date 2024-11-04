@@ -12,9 +12,36 @@ UPDATE_INTERVAL_SECS: int = 1
 
 ui.page_opts(title="Kersha: Live Data (Basic)", fillable=True),
 
+# Add CSS for background color
+ui.tags.style("""
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import a Google Font */
+
+    body {
+        background-color: #f0f8ff; /* Light blue background */
+        font-family: 'Roboto', sans-serif; /* Apply the font globally */
+    }
+
+    h2 {
+        font-weight: 700; /* Bold font for headers */
+    }
+
+    .center-img {
+        display: block;
+        margin: auto;
+        width: 150px; /* Adjust width as needed */
+    }
+""")
+
 with ui.sidebar(open="open"):
 
     ui.h2("Antarctic Explorer", class_="text-center")
+
+  # Display the penguin image from the provided URL
+    ui.img(
+        src="https://media.istockphoto.com/id/147290529/photo/emperors.jpg?s=612x612&w=0&k=20&c=ZApZFJtKoXGKYYJsgNcNPTMHqqSbbAx9CBg2AF2qyJk=",
+        alt="Emperor Penguins",
+        class_="center-img"
+    )
 
     ui.p(
         "A demonstration of real-time temperature readings in Antarctica.",
@@ -24,6 +51,12 @@ with ui.sidebar(open="open"):
     ui.hr()
 
     ui.h6("Links:")
+
+    ui.a(
+        "An Interactive Insight to the Penguin Species of Antarctica",
+        href="https://kersha0530.github.io/cintel-04-local/",
+        target="_blank"
+    )
 
     ui.a(
         "GitHub Source",
