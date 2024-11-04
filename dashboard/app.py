@@ -51,7 +51,7 @@ with ui.sidebar(open="open"):
 
     ui.p(
     ui.tags.i(class_="fas fa-thermometer-half", style="font-size: 1.5em; color: red;"),
-    " Current temperature reading in Antarctica"
+    " Real-time temperature trend with linear regression analysis."
     )
 
     ui.hr()
