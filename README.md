@@ -20,7 +20,7 @@ You can install them using `pip`:
 ```sh
 pip install shiny shiny-express faicons matplotlib
 
-Types of Imports
+* Types of Imports
 ## Standard Library Imports:
 
 These are built-in modules that come with Python. For example:
@@ -37,7 +37,6 @@ from shiny.express import ui
 from faicons import icon_svg
 import matplotlib.pyplot as plt
 
-Best Practices
 Organize Imports:
 
 Keep standard library imports at the top, followed by third-party imports, and then your own modules.
