@@ -5,6 +5,9 @@ from faicons import icon_svg
 # From shiny.express, import just ui
 from shiny.express import ui
 
+ui.tags.link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+
+
 # Constants
 UPDATE_INTERVAL_SECS: int = 1
 
@@ -36,6 +39,9 @@ with ui.sidebar(open="open"):
 
     ui.h2("Antarctic Explorer", class_="text-center")
 
+    ui.div(ui.tags.i(class_="fas fa-sun", style="font-size: 2em; color: orange;"), class_="text-center")
+
+
   # Display the penguin image from the provided URL
     ui.img(
         src="https://media.istockphoto.com/id/147290529/photo/emperors.jpg?s=612x612&w=0&k=20&c=ZApZFJtKoXGKYYJsgNcNPTMHqqSbbAx9CBg2AF2qyJk=",
@@ -44,8 +50,8 @@ with ui.sidebar(open="open"):
     )
 
     ui.p(
-        "A demonstration of real-time temperature readings in Antarctica.",
-        class_="text-center",
+    ui.tags.i(class_="fas fa-thermometer-half", style="font-size: 1.5em; color: red;"),
+    " Current temperature reading in Antarctica"
     )
 
     ui.hr()
@@ -53,24 +59,32 @@ with ui.sidebar(open="open"):
     ui.h6("Links:")
 
     ui.a(
-        "An Interactive Insight to the Penguin Species of Antarctica",
-        href="https://kersha0530.github.io/cintel-04-local/",
-        target="_blank"
+        ui.tags.i(class_="fab fa-github", style="font-size: 1.5em; color: black;"),
+        " An Interactive Insight to the Penguin Species of Antarctica",
+        href="https://github.com/kersha0530/cintel-04-local",
+        target="_blank",
     )
 
     ui.a(
+        ui.tags.i(class_="fab fa-github", style="font-size: 1.5em; color: black;"),
+        " GitHub App",
+        href="https://github.com/kersha0530/cintel-05-cintel",
+        target="_blank",
+    )
+
+    ui.a(
+        ui.tags.i(class_="fa-brands fa-github" , style="font-size: 1.5em; color: black;"),
         "GitHub Source",
         href="https://github.com/kersha0530/cintel-05-cintel",
         target="_blank",
     )
 
     ui.a(
-        "GitHub App",
-        href="https://github.com/kersha0530/cintel-05-cintel",
-        target="_blank",
+        ui.tags.i(class_="fas fa-shield-alt", style="font-size: 1.5em; color: darkblue;"),
+        " PyShiny",
+        href="https://shiny.posit.co/py/",
+        target="_blank"
     )
-
-    ui.a("PyShiny", href="https://shiny.posit.co/py/", target="_blank")
 
 #---------------------------------------------------------------------
 # In Shiny Express, everything not in the sidebar is in the main panel
