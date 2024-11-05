@@ -4,6 +4,8 @@ import random
 from faicons import icon_svg
 # From shiny.express, import just ui
 from shiny.express import ui
+from scipy import stats
+import matplotlib.pyplot as plt
 
 ui.tags.link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
 
