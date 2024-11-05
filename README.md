@@ -1,21 +1,55 @@
 # cintel-05-cintel
 # Kersha: Antarctic Temperature Tracker
-Kersha: Antarctic Temperature Tracker
+# Antarctic Temperature Tracker
 
 ## Overview
-This Shiny app demonstrates real-time temperature readings in Antarctica. It uses PyShiny to create an interactive web application that displays the current temperature and timestamp. The app updates the data periodically to provide live insights.
+
+The Antarctic Temperature Tracker is a web application built using PyShiny to monitor and display real-time temperature data from various locations in Antarctica. The application allows users to select a location and view current temperature readings, historical data trends, and statistical information such as average, minimum, and maximum temperatures.
 
 ## Features
-- **Current Temperature**: Displays the current temperature with real-time updates.
-- **Current Date and Time**: Shows the current date and time, updating in real-time.
-- **Links**: Provides useful links to the GitHub source, GitHub app, and PyShiny documentation.
+
+- Real-time temperature tracking for selected Antarctic locations.
+- Display of current temperature, timestamp, and location.
+- Plotting of temperature trends over time.
+- Display of statistical data: average, minimum, and maximum temperatures.
+- User-friendly UI with a location selector and penguin imagery for visual appeal.
+
+## Installation
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/kersha0530/antarctic-temperature-tracker.git
+    cd antarctic-temperature-tracker
+    ```
+
+2. **Create and activate a virtual environment (optional but recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+Run the application with the following command:
+```bash
+python app.py
+
 
 ## Installation Requirements
-To run this app, you need the following Python packages:
-- `shiny`
-- `shiny-express`
-- `faicons`
-- `matplotlib`
+
+### requirements.txt
+
+```txt
+shiny
+shiny-express
+scipy
+matplotlib
+faicons
 
 You can install them using `pip`:
 ```sh
